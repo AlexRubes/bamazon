@@ -1,6 +1,6 @@
 # **Bamazon App**
 
-This app is an Amazon-like storefront that takes in orders from customers and depletes stock from the store's inventory. All data is stored in MySQL. Inquirer and MySQL npm packages were required to make this app work. The app serves 3 different functions: customer facing for the ability to make a purchase, manager facing to perform admin tasks, and supervisor facing to manage business. 
+This app is an Amazon-like storefront that takes in orders from customers and depletes stock from the store's inventory. All data is stored in MySQL. Inquirer and MySQL npm packages were required to make this app work. The app serves 2 different functions: customer facing for the ability to make a purchase & manager facing to perform admin tasks.
 
 ## * Customer *
 1. The customer will be shown a table of products with item details. 
