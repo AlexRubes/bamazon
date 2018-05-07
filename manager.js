@@ -50,6 +50,7 @@ function viewProdForSale() {
     connection.query(query, function (err, res) {
         // show the products
         console.table(res);
+        start();
     });
 }
 
@@ -58,6 +59,7 @@ function viewLowInventory() {
     connection.query(query, function (err, res) {
         // show the low inventory lines
         console.table(res);
+        start();
     });
 }
 
@@ -92,11 +94,12 @@ function addToInventory() {
                 function (err, res) {
                     if (err) throw err;
                     console.log(res.affectedRows + " product stock quantity updated!\n");
-
+                    start();
                 }
             );
             // logs the actual query being run
-            console.log(query.sql);
+            //console.log(query.sql);
+            
         });
 
 }
@@ -140,11 +143,13 @@ function addNewProduct() {
                 function (err, res) {
                     if (err) throw err;
                     console.log(res.affectedRows + " new product was added to your inventory!\n");
+                    start();
 
                 }
             );
             // logs the actual query being run
-            console.log(query.sql);
+            //console.log(query.sql);
+            
         });
 
 }
